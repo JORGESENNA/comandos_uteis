@@ -1,0 +1,15 @@
+
+Configurar o Git para uso com delimitadores de linha
+
+configurar crlf
+$ git config --global core.autocrlf true
+
+
+
+
+Salva seus arquivos atuais no Git, assim seu trabalho não será perdido.
+$ git add . -u
+$ git commit -m "Saving files before refreshing line endings"
+$ git add --renormalize .
+$ git status
+$ git commit -m "Normalize all the line endings"
